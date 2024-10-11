@@ -28,7 +28,7 @@ const Login = () => {
             }
             <input type="email" placeholder='Email' value={ email } onChange={ (e) => setEmail(e.target.value) } className='outline-none p-3 my-2 rounded-sm bg-gray-800 text-white' />
             <input  type="password" placeholder='Password' value={ password } onChange={ (e) => setPassword(e.target.value) } className='outline-none p-3 my-2 rounded-sm bg-gray-800 text-white' />
-            <button className='bg-red-600 text-white'>{isLogin ?"Login" : "Signup"}</button>
+            <button className='bg-red-600 text-white p-2 justify-center items-center rounded-lg mt-4 font-medium'>{isLogin ?"Login" : "Signup"}</button>
             <p className='text-white'>{ isLogin ? "New to Netflix?" : "Already have an account?" }<span onClick={ loginHandler } className='ml-2 text-blue-400 font-medium cursor-pointer'>{ isLogin ? "Signup" : "Login" }</span></p>
           </div>
         </form>
